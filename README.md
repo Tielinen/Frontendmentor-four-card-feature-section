@@ -16,7 +16,6 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 ## Overview
 
 Four card feature section newbie challenge on Frontend Mentor.
-Very simple webpage Done with HTML and CSS.
 My goal is to write simple and easy to read code.
 
 ### The challenge
