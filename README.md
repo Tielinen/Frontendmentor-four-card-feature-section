@@ -27,8 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-screenshot.jpg
-
+![](./screenshot.jpg)
 ### Built with
 
 - Semantic HTML5 markup
