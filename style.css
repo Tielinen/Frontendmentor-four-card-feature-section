@@ -1,0 +1,137 @@
+:root {
+  --primary-red: hsl(0, 78%, 62%);
+  --primary-cyan: hsl(180, 62%, 55%);
+  --primary-orange: hsl(34, 97%, 64%);
+  --primary-blue: hsl(212, 86%, 64%);
+
+  /* Neutral colors */
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: Poppins, sans-serif;
+}
+
+header {
+  text-align: center;
+  max-width: 311px;
+  margin: 50px 0;
+}
+
+header h2 {
+  font-size: 24px;
+  color: var(--very-dark-blue);
+}
+
+header h2:first-child {
+  font-weight: 200;
+}
+
+header h2:nth-child(2) {
+  font-weight: 600;
+}
+
+header p {
+  text-align: center;
+  font-size: 15px;
+}
+
+p {
+  color: var(--grayish-blue);
+  font-size: 13px;
+}
+
+.info-card {
+  display: flex;
+  flex-flow: column;
+
+  max-width: 311px;
+  min-height: 222px;
+
+  border-radius: 5px;
+  border-top: 5px solid;
+
+  margin-bottom: 25px;
+  padding: 25px;
+
+  box-shadow: 3px 15px 20px -9px rgb(170, 180, 190);
+}
+
+.info-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--headings-color);
+}
+.image-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: end;
+  align-items: end;
+}
+
+.info-card img {
+  width: 57px;
+  height: 57px;
+}
+
+#supervisor {
+  border-color: var(--primary-cyan);
+}
+
+#team-builder {
+  border-color: var(--primary-red);
+}
+
+#karma {
+  border-color: var(--primary-orange);
+}
+
+#calculator {
+  border-color: var(--primary-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1110px) {
+  .info-card {
+    width: 350px;
+    height: 250px;
+  }
+
+  header {
+    max-width: 540px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .info-cards-container {
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+  }
+
+  #supervisor,
+  #calculator {
+    margin: auto 0;
+  }
+}
