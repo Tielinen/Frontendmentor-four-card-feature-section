@@ -1,4 +1,5 @@
 :root {
+  /* Primary colors */
   --primary-red: hsl(0, 78%, 62%);
   --primary-cyan: hsl(180, 62%, 55%);
   --primary-orange: hsl(34, 97%, 64%);
@@ -8,6 +9,8 @@
   --grayish-blue: hsl(229, 6%, 66%);
   --very-light-gray: hsl(0, 0%, 98%);
   --very-dark-blue: hsl(234, 12%, 34%);
+
+  --info-card-padding: 25px;
 }
 
 * {
@@ -54,8 +57,7 @@ p {
 }
 
 .info-card {
-  display: flex;
-  flex-flow: column;
+  position: relative;
 
   max-width: 311px;
   min-height: 222px;
@@ -64,7 +66,7 @@ p {
   border-top: 5px solid;
 
   margin-bottom: 25px;
-  padding: 25px;
+  padding: var(--info-card-padding);
 
   box-shadow: 3px 15px 20px -9px rgb(170, 180, 190);
 }
@@ -72,18 +74,16 @@ p {
 .info-card h3 {
   font-size: 20px;
   font-weight: 600;
-  color: var(--headings-color);
-}
-.image-container {
-  display: flex;
-  flex-grow: 1;
-  justify-content: end;
-  align-items: end;
+  color: var(--very-dark-blue);
 }
 
 .info-card img {
   width: 57px;
   height: 57px;
+
+  position: absolute;
+  right: var(--info-card-padding);
+  bottom: var(--info-card-padding);
 }
 
 #supervisor {
